@@ -155,17 +155,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-n9-BGx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ghx-Hk-RkC">
+                                <rect key="frame" x="155.5" y="220" width="103" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="NPJ-NL-RSF"/>
+                                    <constraint firstAttribute="height" constant="82" id="usm-bH-tQi"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="sJO-wd-aK6">
-                                <rect key="frame" x="62" y="397.5" width="290" height="111"/>
+                                <rect key="frame" x="62" y="469" width="290" height="111"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-tt-ZbN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-tt-ZbN">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Qj-kqD">
-                                        <rect key="frame" x="127" y="81" width="36" height="30"/>
-                                        <state key="normal" title="Send"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Qj-kqD" customClass="RoundButton" customModule="ToDO" customModuleProvider="target">
+                                        <rect key="frame" x="113" y="81" width="64" height="30"/>
+                                        <color key="backgroundColor" red="0.79795855280000005" green="0.11290004100000001" blue="0.31372433900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="uNl-b9-aTe"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="send:" destination="Piw-eD-Ybo" eventType="touchUpInside" id="TEh-h5-uqG"/>
                                         </connections>
@@ -177,18 +198,26 @@
                         <constraints>
                             <constraint firstItem="sJO-wd-aK6" firstAttribute="centerX" secondItem="kT7-f4-Tph" secondAttribute="centerX" id="4we-FG-q6h"/>
                             <constraint firstItem="3Gc-tt-ZbN" firstAttribute="width" secondItem="zvQ-Hq-tm9" secondAttribute="width" multiplier="0.7" id="5yV-kR-0zf"/>
-                            <constraint firstItem="sJO-wd-aK6" firstAttribute="centerY" secondItem="kT7-f4-Tph" secondAttribute="centerY" id="dUH-5C-luF"/>
+                            <constraint firstItem="Ghx-Hk-RkC" firstAttribute="centerX" secondItem="bLe-n9-BGx" secondAttribute="centerX" id="6El-w3-Ulf"/>
+                            <constraint firstItem="sJO-wd-aK6" firstAttribute="top" secondItem="Ghx-Hk-RkC" secondAttribute="bottom" constant="167" id="8kg-dG-C6S"/>
+                            <constraint firstItem="bLe-n9-BGx" firstAttribute="bottom" secondItem="zvQ-Hq-tm9" secondAttribute="bottom" id="EZe-Za-py5"/>
+                            <constraint firstItem="sJO-wd-aK6" firstAttribute="centerY" secondItem="kT7-f4-Tph" secondAttribute="centerY" constant="71.5" id="dUH-5C-luF"/>
+                            <constraint firstItem="bLe-n9-BGx" firstAttribute="leading" secondItem="kT7-f4-Tph" secondAttribute="leading" id="hL4-lm-V2x"/>
+                            <constraint firstAttribute="top" secondItem="bLe-n9-BGx" secondAttribute="top" id="nvu-OX-QWu"/>
+                            <constraint firstItem="kT7-f4-Tph" firstAttribute="trailing" secondItem="bLe-n9-BGx" secondAttribute="trailing" id="pk8-qR-jY6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kT7-f4-Tph"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="bLe-n9-BGx" id="T8l-EZ-iCT"/>
+                        <outlet property="sendButton" destination="f77-Qj-kqD" id="deW-Mw-CLs"/>
                         <outlet property="textFIeld" destination="3Gc-tt-ZbN" id="0d6-Ue-GcM"/>
                         <segue destination="iPc-Me-qZ2" kind="presentation" identifier="moveToMainScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Sby-OW-XC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uob-tF-acP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1052" y="-106"/>
+            <point key="canvasLocation" x="-1052.1739130434783" y="-106.47321428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3mC-hl-lgQ">
@@ -411,12 +440,13 @@
     </scenes>
     <resources>
         <image name="green" width="80" height="80"/>
+        <image name="logo" width="1024" height="1024"/>
         <image name="red" width="88.5" height="88.5"/>
         <image name="text.justify" catalog="system" width="64" height="50"/>
         <image name="yellow" width="95.5" height="95.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vV8-ku-GZX"/>
-        <segue reference="Nfg-DI-Gvg"/>
+        <segue reference="Sby-OW-XC1"/>
+        <segue reference="DbT-Yh-KMd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,15 +11,19 @@ import SwiftSMTP
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        backgroundImage.image = UIImage(named: "After Noon.png")
+        backgroundImage.contentMode = .scaleAspectFill
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-//        UserDefaults.standard.set(true, forKey: "isLogged")
         if UserDefaults.standard.bool(forKey: "isLogged") ==  true {
             print("True")
             self.performSegue(withIdentifier: "moveToMainScreen", sender: self)
@@ -30,10 +34,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBOutlet weak var textFIeld: UITextField!
-    
-//    @IBAction func send(_ sender: Any) {
-//        self.performSegue(withIdentifier: "moveToMainScreen", sender: self)
-//    }
     
     var timesEnterVerificationCode = 0
     var userEmail = ""
@@ -55,8 +55,8 @@ class LoginViewController: UIViewController {
     var verificationCode = ""
     
     let smtp = SMTP(
-        hostname: "smtp.mail.ru",     // SMTP server address
-        email: "Vanyusha.abramov.00@mail.ru",        // username to login
+        hostname: "smtp.mail.ru",                   // SMTP server address
+        email: "Vanyusha.abramov.00@mail.ru",       // username to login
         password: "namryn-5vuqje-wYsqic"            // password to login
     )
     
