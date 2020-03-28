@@ -1,0 +1,33 @@
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "3EW-0R-dUd"; */
+"3EW-0R-dUd.title" = "Cancel";
+
+/* Class = "UISegmentedControl"; 3Wt-Pf-z6x.segmentTitles[0] = "Urgent"; ObjectID = "3Wt-Pf-z6x"; */
+"3Wt-Pf-z6x.segmentTitles[0]" = "Urgent";
+
+/* Class = "UISegmentedControl"; 3Wt-Pf-z6x.segmentTitles[1] = "Non urgent"; ObjectID = "3Wt-Pf-z6x"; */
+"3Wt-Pf-z6x.segmentTitles[1]" = "Non urgent";
+
+/* Class = "UISegmentedControl"; 82Z-bP-8A5.segmentTitles[0] = "EN"; ObjectID = "82Z-bP-8A5"; */
+"82Z-bP-8A5.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; 82Z-bP-8A5.segmentTitles[1] = "RU"; ObjectID = "82Z-bP-8A5"; */
+"82Z-bP-8A5.segmentTitles[1]" = "RU";
+
+/* Class = "UILabel"; text = "Your note"; ObjectID = "9WA-bO-omN"; */
+"9WA-bO-omN.text" = "Your note";
+
+/* Class = "UILabel"; text = "Urgent"; ObjectID = "G0p-Ef-e95"; */
+"G0p-Ef-e95.text" = "Urgent";
+
+/* Class = "UILabel"; text = "Not urgent"; ObjectID = "HQ0-99-NJc"; */
+"HQ0-99-NJc.text" = "Not urgent";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Ju1-L6-yqW"; */
+"Ju1-L6-yqW.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Edit Note"; ObjectID = "swn-qw-80c"; */
+"swn-qw-80c.title" = "Edit Note";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "v0F-Rq-DCk"; */
+"v0F-Rq-DCk.title" = "Save";
