@@ -3,9 +3,9 @@ Simple ToDo app with settings
 
 ### Features
 
--Add & detele & edit note
--Multiaccount
--Change appearance (Color of urgent and nonurgent progress bar)
+-Add & detele & edit note\
+-Multiaccount\
+-Change appearance (Color of urgent and nonurgent progress bar)\dx4s
 
 # ToDo app
 
