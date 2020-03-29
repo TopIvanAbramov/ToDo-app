@@ -55,9 +55,9 @@ class LoginViewController: UIViewController {
     var verificationCode = ""
     
     let smtp = SMTP(
-        hostname: "smtp.mail.ru",                   // SMTP server address
-        email: "Vanyusha.abramov.00@mail.ru",       // username to login
-        password: "namryn-5vuqje-wYsqic"            // password to login
+        hostname: "smtp.mail.ru",                                        // SMTP server address
+        email: ProcessInfo.processInfo.environment["email"]!,            // username to login
+        password: ProcessInfo.processInfo.environment["emailPassword"]!  // password to login
     )
     
     

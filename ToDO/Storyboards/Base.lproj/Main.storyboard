@@ -10,7 +10,7 @@
         <!--Edit Note-->
         <scene sceneID="vGm-Zz-O7f">
             <objects>
-                <tableViewController id="bMt-td-ka4" customClass="EditNoteViewController" customModule="ToDO" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bMt-td-ka4" customClass="EditNoteViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Abt-1u-unH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +150,7 @@
         <!--Login View Controller-->
         <scene sceneID="b0T-2X-5IS">
             <objects>
-                <viewController id="Piw-eD-Ybo" customClass="LoginViewController" customModule="ToDO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Piw-eD-Ybo" customClass="LoginViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zvQ-Hq-tm9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,9 +171,9 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-tt-ZbN">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Qj-kqD" customClass="RoundButton" customModule="ToDO" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Qj-kqD" customClass="RoundButton" customModule="ToDo" customModuleProvider="target">
                                         <rect key="frame" x="113" y="81" width="64" height="30"/>
                                         <color key="backgroundColor" red="0.79795855280000005" green="0.11290004100000001" blue="0.31372433900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -244,7 +244,7 @@
         <!--Main Screen View Controller-->
         <scene sceneID="euW-sG-38E">
             <objects>
-                <viewController id="eZo-Ly-H0h" customClass="MainScreenViewController" customModule="ToDO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eZo-Ly-H0h" customClass="MainScreenViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m0U-Ma-G9Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,16 +356,23 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3J-jo-XWp">
-                                        <rect key="frame" x="0.0" y="255" width="110" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3J-jo-XWp" customClass="RoundButton" customModule="ToDo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="255" width="77" height="30"/>
+                                        <color key="backgroundColor" red="0.79795855280000005" green="0.11290004100000001" blue="0.31372433900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Log out"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="logOut:" destination="eZo-Ly-H0h" eventType="touchUpInside" id="xcD-dG-vrb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="w3J-jo-XWp" firstAttribute="width" secondItem="7DQ-NR-dyW" secondAttribute="width" id="uxT-Aw-xAn"/>
+                                    <constraint firstItem="w3J-jo-XWp" firstAttribute="width" secondItem="7DQ-NR-dyW" secondAttribute="width" multiplier="0.7" id="uxT-Aw-xAn"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08G-mH-46N" userLabel="UppperView">
@@ -374,10 +381,10 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4m-gg-At5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="100" id="E97-JB-iP4" customClass="CustomTableViewCell" customModule="ToDO" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="100" id="E97-JB-iP4" customClass="CustomTableViewCell" customModule="ToDo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E97-JB-iP4" id="034-rT-vzV" customClass="CustomTableViewCell" customModule="ToDO" customModuleProvider="target">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E97-JB-iP4" id="034-rT-vzV" customClass="CustomTableViewCell" customModule="ToDo" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>

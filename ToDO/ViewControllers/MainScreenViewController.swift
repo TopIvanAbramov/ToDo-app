@@ -286,7 +286,7 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
     
     func removeAllNotifications() {
         let tempClass = AppDelegate()
-        tempClass.notificationCenter.removeAllDeliveredNotifications()
+        tempClass.notificationCenter.removeAllPendingNotificationRequests()
     }
     
     @IBAction func menuPressed() {
