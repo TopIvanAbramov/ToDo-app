@@ -3,25 +3,17 @@ Simple ToDo app with settings
 
 ### Features
 
--Add & detele & edit note\
+-Add & detele & edit note or category\
 -Multiaccount\
--Change appearance (Color of urgent and nonurgent progress bar)\dx4s
+-Change profile image\
 
 # ToDo app
 
-### Login page
+### Login page & add category
 
-![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/login.png)
+![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/loginAndCategory.gif)
 
-### Main screen
+### Add & delete tasks
 
-![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/main.png)
-
-### Add new note
-
-![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/addnote.png)
-
-### Settings
-
-![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/settings.png)
+![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/Second%20part.gif)
 
