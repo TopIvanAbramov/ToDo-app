@@ -60,5 +60,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please, enable camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please, enable acess to photos</string>
 </dict>
 </plist>
