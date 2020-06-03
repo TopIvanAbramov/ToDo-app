@@ -11,7 +11,7 @@ Simple ToDo app with settings
 
 ### Login page & add category
 
-![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/loginAndCategory.gif)
+![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/First%20psrt.gif)
 
 ### Add & delete tasks
 
