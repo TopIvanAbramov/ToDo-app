@@ -1,8 +1,6 @@
 # ToDo-app
 Simple ToDo app with settings
-
 ![](https://github.com/TopIvanAbramov/ToDo-app/blob/master/ToDO/App%20images/appDemo.png)
-
 ### Features
 
 -Add & detele & edit note or category\
