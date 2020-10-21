@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h57-7I-E65">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h57-7I-E65">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -404,7 +404,7 @@
                         <outlet property="sendButton" destination="Sd4-zc-jZt" id="vdI-6M-Vve"/>
                         <outlet property="username" destination="MXA-OC-lkm" id="KPk-ls-EEk"/>
                         <segue destination="Piw-eD-Ybo" kind="presentation" identifier="changeToSignIn" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="9Bc-e3-fMQ"/>
-                        <segue destination="HuM-nx-zci" kind="presentation" modalPresentationStyle="fullScreen" id="iVs-LG-UPe"/>
+                        <segue destination="HuM-nx-zci" kind="presentation" identifier="moveToMainScreen" modalPresentationStyle="fullScreen" id="iVs-LG-UPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfY-b8-AJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1011,8 +1011,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="iVs-LG-UPe"/>
-        <segue reference="hIs-L1-Ob1"/>
-        <segue reference="9Bc-e3-fMQ"/>
+        <segue reference="9xy-UO-duU"/>
+        <segue reference="ZRd-Xn-67f"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="addCategory" width="170.66667175292969" height="170.66667175292969"/>

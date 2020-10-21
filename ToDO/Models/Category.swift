@@ -1,11 +1,10 @@
 //
-//  Note.swift
+//  Category.swift
 //  ToDO
 //
 //  Created by Иван on 18.02.2020.
 //  Copyright © 2020 Ivan Abramov. All rights reserved.
 //
-
 import UIKit
 
 import RealmSwift

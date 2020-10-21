@@ -5,7 +5,6 @@
 //  Created by Иван Абрамов on 22.05.2020.
 //  Copyright © 2020 Ivan Abramov. All rights reserved.
 //
-
 import UIKit
 
 import RealmSwift
@@ -30,5 +29,3 @@ class Account: Object {
         self.image = image
     }
 }
-
-

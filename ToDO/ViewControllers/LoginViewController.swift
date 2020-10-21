@@ -5,7 +5,6 @@
 //  Created by Иван Абрамов on 26.03.2020.
 //  Copyright © 2020 Ivan Abramov. All rights reserved.
 //
-
 import UIKit
 import SwiftSMTP
 import RealmSwift
@@ -126,11 +125,11 @@ class LoginViewController: UIViewController {
     }
     var verificationCode = ""
     
-    let smtp = SMTP(
-        hostname: "smtp.mail.ru",                                        // SMTP server address
-        email: ProcessInfo.processInfo.environment["email"]!,            // username to login
-        password: ProcessInfo.processInfo.environment["emailPassword"]!  // password to login
-    )
+//    let smtp = SMTP(
+//        hostname: "smtp.mail.ru",                                        // SMTP server address
+//        email: ProcessInfo.processInfo.environment["email"]!,            // username to login
+//        password: ProcessInfo.processInfo.environment["emailPassword"]!  // password to login
+//    )
     
     @IBAction func tapAction(_ sender: Any) {
 //        if let keyboardHeight =  keyboardHeight {
@@ -298,11 +297,11 @@ class LoginViewController: UIViewController {
             text: text
         )
 
-        smtp.send(mail) { (error) in
-            if let error = error {
-                print(error)
-            }
-        }
+//        smtp.send(mail) { (error) in
+//            if let error = error {
+//                print(error)
+//            }
+//        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
