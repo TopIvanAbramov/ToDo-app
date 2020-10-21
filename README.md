@@ -7,6 +7,14 @@ Simple ToDo app with settings
 -Sign In / Sign Up\
 -Change profile image
 
+### Architecture
+
+[MVC](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
+
+## Used frameworks
+
+-RealmSwift
+
 # App demo
 
 Login page & add category             |  Add & delete tasks
